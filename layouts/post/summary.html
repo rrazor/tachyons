@@ -1,10 +1,10 @@
-<article >
+<article class="content summary">
     <header>
       <div>{{ .Date.Format "Mon, Jan 2, 2006" }} </div>
     </header>
 
     {{ .Summary }}
-    <footer>
-        <a href='{{ .Permalink }}'><nobr>Read more →</nobr></a>
-    </footer>
+	<p class="mt0">
+		<a class="nowrap" href='{{ .Permalink }}'>Read more...</a>
+	</p>
 </article>

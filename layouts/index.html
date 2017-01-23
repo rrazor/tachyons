@@ -1,13 +1,168 @@
 {{ partial "header.html" . }}
 
-    <main class="pax">
-      <h1 class="ttu fw4 f6 lt-silver">Posts</h1>
-           {{ range first 10 .Data.Pages }}
-                {{ if eq .Type "post"}}
-                <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-                {{ .Render "summary"}}
-                {{ end }}
-            {{ end }}
-    </main>
+<main>
+	<div class="mw8 ba-ns b--black-10 center">
+
+		<div class="cf pa3 pa0-ns pt4-ns ph3-ns bg-white relative">
+			<h1 class="f1 mt2 mb2 mb4-ns dib brand"><a href="/">Matt Gray</a></h1>
+			<img src="/img/matt-gray.png" class="dn db-m db-l absolute bottom-0 right-1 h4 w4 v-btm">
+		</div>
+
+		<div class="relative bg-black-10">
+			<div class="absolute top--1 w-100 tc">
+				<img src="/img/matt-gray.png" class="dn-ns mb--1 br-100 ba h4 w4 dib b--black-20">
+			</div>
+			<div class="pa3 pt6 pt1-ns lh-copy">
+				<h2 class="normal pa0 tc">Exceptional Technical Leader</h2>
+				<ul class="measure-wide center f4-ns mt0">
+					<li class="pv1">Engineering leader specializing in <strong>LAMP</strong> and <strong>open source</strong></li>
+					<li class="pv1">Deep <strong>DevOps</strong> expertise: security, automation, CI, and monitoring</li>
+					<li class="pv1">Excellent interpersonal skills honed as a manager &amp;&nbsp;technical&nbsp;lead</li>
+					<li class="pv1">Versatile and voracious learner with experience from <strong>C</strong> to <strong>NodeJS</strong></li>
+					<li class="pv1">Co-founder &amp; champion of MN’s first CoderDojo, <a href="http://www.coderdojotc.org/">CoderDojoTC</a></li>
+				</ul>
+				<div class="tc">
+					<span class="bg-white-90 ph3 pv2 br1 dib">
+						<a class="hire-me f3 mb2 black" href="#contact">Contact Matt</a>
+					</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="pa3 lh-copy bg-lightest-blue" id="references">
+			<div class="ph3-ns">
+				<div class="cf">
+					<div class="fl w-50-l w-100">
+						<blockquote class="ph3 mh2 f4 h5-l bg-white ba b--black-05 br2">
+							<p class="mb0 hanging-quote">“<strong>Matt is unstoppable.</strong> His commitment to discovering and executing on the right answer is like nothing I’ve ever seen. He’s the guy you want on your team. Period.”</p>
+							<div class="f5-ns f6 mt0 cf">
+								<img class="fl mr3 w3 br-100" src="/img/nancy-lyons.jpg">
+								<p class="">—&nbsp;<cite>Nancy Lyons</cite><br>President and CEO, <a href="https://www.clockwork.com/">Clockwork</a></p>
+							</div>
+						</blockquote>
+					</div>
+					<div class="fl w-50-l w-100">
+						<blockquote class="ph3 mh2 f4 h5-l bg-white ba b--black-05 br2">
+							<p class="mb0 hanging-quote">“[W]hile many struggle to explain technical concepts in simple terms, <strong>Matt [...] would say it in such a way that our clients instantly understood</strong> and had full confidence in our team.”</p>
+							<div class="f5-ns f6 mt0 cf">
+								<img class="fr ml3 w3 br-100" src="/img/rett-martin.jpg">
+								<p class="tr mr5">—&nbsp;<cite>Rett Martin</cite><br>Digital Creative Director, <a href="https://www.target.com/">Target</a></p>
+							</div>
+						</blockquote>
+					</div>
+				</div>
+			</div>
+
+			<p class="tc f6">
+				<a href="https://www.linkedin.com/in/mattegray" target="_new">Read more on LinkedIn →</a>
+			</p>
+		</div>
+
+		<div class="pa3 lh-copy" id="skills">
+			<h2 class="center tc mv0">Skills</h2>
+			<div>
+				<div class="cf"><div class="fl w-100 w-third-ns pw2">
+						<div>
+							<h3 class="tc mb0 normal i">Languages</h3>
+							<ul class="mv0 f4-l f5-m ph2 fa-ul">
+								<li class="pro"><i class="fa-li fa fa-circle"></i>HTML5/CSS/JS</li>
+								<li class="pro"><i class="fa-li fa fa-circle"></i>PHP</li>
+								<li class="pro"><i class="fa-li fa fa-circle"></i>MySQL &amp; Postgres</li>
+								<li class="int"><i class="fa-li fa fa-dot-circle-o"></i>Python</li>
+								<li class="int"><i class="fa-li fa fa-dot-circle-o"></i>NodeJS</li>
+							</ul>
+						</div>
+					</div><div class="fl w-100 w-third-ns pw2">
+						<div>
+							<h3 class="tc mb0 normal i">Methods</h3>
+							<ul class="mv0 f4-l f5-m ph2 fa-ul">
+								<li class="pro"><i class="fa-li fa fa-circle"></i>Agile &amp; Waterfall</li>
+								<li class="pro"><i class="fa-li fa fa-circle"></i>Requirements Analysis</li>
+								<li class="pro"><i class="fa-li fa fa-circle"></i>Software Architecture</li>
+								<li class="int"><i class="fa-li fa fa-dot-circle-o"></i>Continuous Integration</li>
+								<li class="int"><i class="fa-li fa fa-dot-circle-o"></i>Security Engineering</li>
+							</ul>
+						</div>
+					</div><div class="fl w-100 w-third-ns pw2">
+						<div>
+							<h3 class="tc mb0 normal i">Other</h3>
+							<ul class="mv0 f4-l f5-m ph2 fa-ul">
+								<li class="int"><i class="fa-li fa fa-dot-circle-o"></i>AWS</li>
+								<li class="int"><i class="fa-li fa fa-dot-circle-o"></i>Graphite</li>
+								<li class="int"><i class="fa-li fa fa-dot-circle-o"></i>R</li>
+								<li class="newb"><i class="fa-li fa fa-circle-o"></i>Electronics &amp; IoT</li>
+								<li class="newb"><i class="fa-li fa fa-circle-o"></i>Tableau</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="experience" class="pa3 lh-copy bg-black-10">
+			<h2 class="tc mt0">Experience</h2>
+			<div>
+				<ol class="list">
+					<li class="cf mt3">
+						<h3 class="mv0 fl-ns w-50-ns">Chief Innovation Officer</h3>
+						<h4 class="mv0 fr-ns w-40-ns normal i tl-ns"><a href="https://www.clockwork.com/">Clockwork</a>, Jan 2015–Present</h4>
+						<p class="cl measure-wide">Researched technology frontiers to inform strategy and tactics for clients. Fostered a culture of invention and collaboration across disciplines. Helped clients develop high-level strategic plans for technology investments. Built rapid prototypes for new products and pitches. Solution architect for a multi-year contract product development project. Cultivated strong relationships in sales and client account management.</p>
+					</li>
+					<li class="cf mt3">
+						<h3 class="mv0 fl-ns w-50-ns">Co-Founder and Champion</h3>
+						<h4 class="mv0 fr-ns w-40-ns normal i tl-ns"><a href="http://www.coderdojotc.org/">CoderDojo Twin Cities</a>, Jan 2013–Present</h4>
+						<p class="cl measure-wide">Founded the first <a href="http://www.coderdojo.com/">CoderDojo</a> chapter in Minnesota. Bootstrapped a startup non-profit program to a volunteer list of 500+ and a parent list of over 2,000. Personally volunteered at all but two events over program lifetime and ongoing. Cited in the <a href="http://www.wsj.com/articles/SB10001424052702304709904579411354120634252">Wall Street Journal</a>, <a href="http://www.startribune.com/kids-are-learning-the-language-of-computers/218017301/">Star Tribune</a>, and <a href="http://tech.mn/news/2013/04/15/coderdojo-twin-cities/">TECHdotMN</a>.</p>
+					</li>
+					<li class="cf mt3">
+						<h3 class="mv0 fl-ns w-50-ns">Vice President, Technology</h3>
+						<h4 class="mv0 fr-ns w-40-ns normal i tl-ns"><a href="https://www.clockwork.com/">Clockwork</a>, Jan 2011–Jan 2015</h4>
+						<p class="cl measure-wide">Leader responsible for Clockwork’s engineering and technical operations disciplines. Led the team and engineered Clockwork’s internal PLM, replacing a spreadsheet-based resource forecasting and assignment process. Created peer lead role to scale engineering and QA departments without adding management layers. Acting information security officer. Closed high-value deals as a sales engineer. Owned IT budgets.</p>
+					</li>
+					<li class="cf mt3">
+						<h3 class="mv0 fl-ns w-50-ns">Technology Director</h3>
+						<h4 class="mv0 fr-ns w-40-ns normal i tl-ns"><a href="https://www.clockwork.com/">Clockwork</a>, Dec 2006–Jan 2011</h4>
+						<p class="cl measure-wide">Defined Clockwork’s SDLC. Designed and implemented initial PCI DSS compliance. Created system administration change management process. Developed personal relationships with key clients. Led developer training and code review practice. Traveled to Shanghai as point person for a custom on-premise systems and software install.</p>
+					</li>
+					<li class="cf mt3">
+						<h3 class="mv0 fl-ns w-50-ns">Software Engineer</h3>
+						<h4 class="mv0 fr-ns w-40-ns normal i tl-ns"><a href="https://www.clockwork.com/">Clockwork</a>, May 2004–Dec 2006</h4>
+						<p class="cl measure-wide">Developed and maintained a wide variety of software, ranging from database-driven content management systems to custom software for producing digital artworks. Assisted with systems administration. Point person for customer support.</p>
+					</li>
+					<li class="cf mt3">
+						<h3 class="mv0 fl-ns w-50-ns">Systems Administrator</h3>
+						<h4 class="mv0 fr-ns w-40-ns normal i tl-ns"><a href="http://etacar.umn.edu/">University of Minnesota</a>, 2002–2004</h4>
+						<p class="cl measure-wide">Developed the <a href="http://aps.umn.edu/">APS website</a> for researchers to query and download POSS data. Implemented numerical routines to process STIS spectra from the Hubble. Devised a renderer to visualize the data. Designed and developed the <a href="http://etacar.umn.edu/">Eta Carinae website</a> to publish the spectra data products. Authored <a href="http://etacar.umn.edu/treasury/techmemos/">technical memos</a> and received credited on several posters &amp; papers.</p>
+					</li>
+				</ol>
+			</div>
+		</div>
+
+		<div id="education" class="pa3 lh-copy">
+			<div class="w-50-ns w-80-m center">
+				<h2 class="tc mt0">Education</h2>
+				<h3 class="mv0">B.S., Computer Science; Mathematics Minor</h3>
+				<h4 class="mv0 normal i">University of Minnesota</h4>
+			</div>
+		</div>
+
+		<div class="pa3 lh-copy bg-lightest-blue pb6">
+			<a id="contact"></a>
+			<div class="pa3 mw6 center ba b--black-20 bg-white cf">
+				<span class="f1 mt3 brand"><a href="/">Matt Gray</a></span>
+				<dl class="lh-title pa0 pt4 mt0 fr">
+					<dt class="f6 mt3">Email</dt>
+					<dd class="ml0"><a href="mailto:hire@mattgray.com">hire@mattgray.com</a></dd>
+					<dt class="f6 mt3">Phone</dt>
+					<dd class="ml0"><a href="tel:+16127092303">(612) 709-2303</a></dd>
+				</dl>
+				<br>
+				<ul class="list i pa0 f2 mb0">
+					<li class="dib mr2"><a class="normal" target="_new" href="https://github.com/rrazor"><i class="fa fa-github"></i></a></li>
+					<li class="dib mr2"><a class="normal" target="_new" href="https://www.linkedin.com/in/mattegray"><i class="fa fa-linkedin"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</main>
 
 {{ partial "footer.html" . }}
